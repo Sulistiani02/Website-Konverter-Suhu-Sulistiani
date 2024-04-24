@@ -9,6 +9,14 @@
     background-color: rgb(165, 165, 165);
     color: rgb(83, 82, 82);
 }
+form {
+    max-width: 400px;
+    margin: 40px auto auto auto ;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 h1{
     font-size: 25px;
     text-align: center;
