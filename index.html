@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <main>
+        <header class="main-title"> Website Konversi Suhu
+            <h1>By Sulistiani</h1>
+        </header>
+       
+
+    <section class="main-section">
+        <section>
+            <p>Masukkan Suhu Derajat Celcius (&deg;C)</p>
+        </section>
+
+       <section class="section-celcius">
+            <header>
+                <h3>Celcius (&deg;C):</h3>
+            </header>   
+
+        <article>
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value="" />
+        <article>
+
+            
+            <section class="section-fahrenheit">
+                <header>
+                    <h3>Fahrenheit (&deg;F):</h3>
+                </header>   
+    
+            <article>
+               <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" />
+            </article>
+            </section>
+    
+        <button id="convert">Konversi</button>
+        <button id="clear">Reset</button>
+        <button id="reverse">Reverse</button></article>
+        </article>
+        </section>
+    
+        
+        <section class="section-kalkulasi">
+            <header>
+                <h3>Cara Kalkulasi:</h3>
+            </header>   
+
+        <article>
+            <input type="text" id="cara" placeholder="Cara Kalkulasi" name="h" value="" readonly />
+        </article>
+    </section>
+
+    <!-- <p>Fahrenheit ke Celcius</p> -->
+
+    <section class="section-explanation">
+        <header>
+            <h4>Cara Konversi Dari Celcius (&deg;C)</h4>
+        </header>   
+        <hr>
+    <article>
+        <h2 class="penjelasan">Suhu S dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.
+            <p> S<sub>(&deg;F)</sub>=(S<sub>(&deg;C)</sub> x 9/5) + 32</p>
+            
+            <p>atau</p>
+            
+            <p>S<sub>(&deg;F)</sub>=(S<sub>(&deg;C)</sub> x 1.8) + 32</p></h2>
+            <script src="js/script.js"></script>
+    </article>
+</section>
+    </main>
+</body>
+</html>
