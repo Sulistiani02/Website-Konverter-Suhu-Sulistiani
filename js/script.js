@@ -1,5 +1,4 @@
-// document.getElementById('clear').onclick = clear;
-document.getElementById("tempForm").addEventListener("convert", function(event) {
+document.getElementById("tempForm").addEventListener("submit", function(event) {
     event.preventDefault();
     var temperature = parseFloat(document.getElementById("tempInput").value);
     var conversionType = document.getElementById("conversionType").value;
@@ -37,10 +36,3 @@ document.getElementById("tempForm").addEventListener("convert", function(event) 
     document.getElementById("conversionResult").textContent = result;
     document.getElementById("resultCalc").textContent = "(" + temperature + formulaCalc + " = "+ result; 
 });
-
-// function clear() {
-//     document.getElementById('fahrenheit').value = '';
-//     document.getElementById('celsius').value = '';
-//     document.getElementById('cara').value = '';
-// }
-
