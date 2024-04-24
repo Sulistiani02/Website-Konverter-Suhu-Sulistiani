@@ -1,4 +1,4 @@
-document.getElementById('clear').onclick = clear;
+// document.getElementById('clear').onclick = clear;
 document.getElementById("tempForm").addEventListener("convert", function(event) {
     event.preventDefault();
     var temperature = parseFloat(document.getElementById("tempInput").value);
@@ -38,9 +38,9 @@ document.getElementById("tempForm").addEventListener("convert", function(event) 
     document.getElementById("resultCalc").textContent = "(" + temperature + formulaCalc + " = "+ result; 
 });
 
-function clear() {
-    document.getElementById('fahrenheit').value = '';
-    document.getElementById('celsius').value = '';
-    document.getElementById('cara').value = '';
-}
+// function clear() {
+//     document.getElementById('fahrenheit').value = '';
+//     document.getElementById('celsius').value = '';
+//     document.getElementById('cara').value = '';
+// }
 
