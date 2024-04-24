@@ -36,19 +36,38 @@ function clear() {
 }
 
 function reverse() {
-    var inputType = document.getElementById("cara").value;
-    var fahrenheit = document.getElementById("fahrenheit").value;
-    var celsius = document.getElementById("celsius").value;
-  
-    if (reverse) {
-      var fahrenheit = (inputValue * 9/5) + 32;
-      result = "Rumus: Celcius = (Fahrenheit - 32) × 5/9<br>";
-      result += "Hasil konversi: " + fahrenheit + " Fahrenheit";
-      document.getElementById("calculation").value = "Fahrenheit = (" + inputValue + " - 32) × 5/9";
-    } else if (inputType === "fahrenheit") {
-      var celsius = (inputValue - 32) * 5/9;
-      result = "Rumus: Fahrenheit = (Celcius × 9/5) + 32<br>";
-      result += "Hasil konversi: " + celsius + " Celcius";
-      document.getElementById("calculation").value = "Celcius = (" + inputValue + " × 9/5) + 32";
+   document.getElementById("resultCalc").textContent = "(" + temperature + formulaCalc + " = "+ result; 
+    
+    switch(conversionType) {
+        case "celsiusToFahrenheit":
+            result = (temperature * 9/5) + 32 + " °F";
+            formulaCalc = " * 9/5) + 32 ";
+            break;
+        case "fahrenheitToCelsius":
+            result = (temperature - 32) * 5/9 + " °C";
+            formulaCalc = " - 32) * 5/9 ";
+            break;
+        case "celsiusToReamur":
+            result = temperature * 4/5 + " °Re";
+            formulaCalc = " * 4/5 ";
+            break;
+        case "reamurToCelsius":
+            result = temperature * 5/4 + " °C";
+            formulaCalc = " * 5/4 ";
+            break;
+        case "fahrenheitToReamur":
+            result = (temperature - 32) * 4/9 + " °Re";
+            formulaCalc = " - 32) * 4/9 ";
+            break;
+        case "reamurToFahrenheit":
+            result = (temperature * 9/4) + 32 + " °F";
+            formulaCalc = " * 9/4) + 32 ";
+            break;
+        default:
+            result = "Invalid conversion type";
     }
+    
+    document.getElementById("conversionResult").textContent = result;
+    document.getElementById("resultCalc").textContent = "(" + temperature + formulaCalc + " = "+ result; 
+});
 }
